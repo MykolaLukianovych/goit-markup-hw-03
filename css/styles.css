@@ -8,6 +8,20 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -112,7 +126,16 @@ p {
   background-color: #2e2f42;
 }
 
+.section-hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .main-title {
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -122,6 +145,10 @@ p {
 }
 
 .hero-button {
+  display: block;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -137,7 +164,23 @@ p {
 }
 /* #endregion hero-section */
 /* #region section 1 */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.page-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.page-item {
+  width: calc((100% - 24px * 3) / 4);
+}
+
 .title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -159,6 +202,9 @@ p {
 }
 
 .team-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -168,13 +214,43 @@ p {
   text-transform: capitalize;
 }
 
+.team-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-card-info {
+  margin: 32px 16px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
 .team-item {
   background-color: #ffffff;
 }
 /* #endregion section 2 */
+/* #region Portfolio */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+.portfolio-card-info {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+/* #endregion Portfolio */
 /* #region footer */
 .page-footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo .part-logo {
@@ -182,6 +258,8 @@ p {
 }
 
 .footer-text {
+  margin-top: 16px;
+  max-width: 264px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
